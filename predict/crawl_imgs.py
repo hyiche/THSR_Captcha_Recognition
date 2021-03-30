@@ -184,7 +184,7 @@ def pass_first_page_with_captcha(arg: Namespace, number: int = 100):
 
 
 # 每n秒執行一次pass_first_page_with_captcha()
-def crawl_captcha_every_n_secs(n):
+def crawl_captcha_per_n_secs(n):
     while True:
         print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         pass_first_page_with_captcha(arg=args, number=1)  # 寫死每次執行只爬取一張圖。
@@ -193,6 +193,6 @@ def crawl_captcha_every_n_secs(n):
 
 if __name__ == '__main__':
     args = parse_args()
-    # crawl_captcha_every_n_secs(n=8)  # 設定每n秒爬取一次。
+    # crawl_captcha_per_n_secs(n=8)  # 設定每n秒爬取一次。
     number = int(input('欲爬取多少張驗證碼? ---> '))
     pass_first_page_with_captcha(arg=args, number=number)
