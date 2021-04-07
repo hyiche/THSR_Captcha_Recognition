@@ -1,6 +1,6 @@
 # 台灣高鐵驗證碼辨識
 
-![](https://img.shields.io/badge/lisence-MIT-blue)
+![](https://img.shields.io/badge/license-MIT-blue)
 
 ### *免責聲明*
 <font color=red>根據中華民國頒布之鐵路法第65條</font>
